@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins';
+}
+@media(max-width: 1000px){
+    .main-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
+    .LHS{
+        order:1
+    }
+
+    .project-cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    .skills-container{
+        flex-direction: column;
+    }
+    .main-image{
+        transform: translate(50%,10%);
+    }
+    .Institutes{
+        flex-direction: column;
+    }
+}
+body{
+    background-color:black
+}
+#Home{
+    background: black;
+}
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+.taskbar .second{
+    display: flex;
+    gap: 3rem;
+}
+.main-container{
+ display: flex;
+
+}
+.LHS{
+    background: black;
+    color: white;
+    padding: 9rem;
+   
+    
+}
+.intro{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.name{
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+}
+.RHS{
+    background:black;
+
+
+}
+.taskbar a{
+    text-decoration: none;
+    color: aqua;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.taskbar{
+    display: flex;
+    gap: 3.5rem;
+    height: 10vh;
+    width: 100%;
+    padding: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+
+}
+.animate{
+    display: inline-flex;
+}
+.animate .changing-text{
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}  
+
+@keyframes slide{
+    100% {
+        top: -360px;
+    }
+}
+
+.static-text{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.changing-text li{
+    list-style: none;
+    color: aqua;
+    font-size: 60px;
+    font-weight: bolder;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+.changing-text li span{
+    position: relative;
+}
+.changing-text li span::after{
+    content: "";
+    position: absolute;
+    background: black;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid aqua;
+    animation: typing 1.5s steps(13) infinite;
+}
+@keyframes typing{
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+.profile{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 250px;
+}
+
+
+.main-image{
+    transform:translate(-10%,30%);
+}
+.RHS{
+    aspect-ratio: 1;
+    }
+
+.main-image :nth-child(1){
+    width: 30rem;
+    border-radius: 50%;
+    border: .1rem solid white;
+    box-shadow: 
+    0 0 1rem white,
+    inset 0 0 1rem white,
+    0 0 2rem aqua,
+    inset 0 0 2rem aqua,
+    0 0 3rem aqua,
+    inset 0 0 3rem aqua;
+}
+.static-text .intro-text{
+    font-size: 20px;
+    font-weight: 100;
+    color: #D7F0F5;
+
+}
+#Skills{
+    background-color: black;
+    color: white;
+    padding: 6rem;
+}
+.section2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 4rem;
+
+}
+.skills-container{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .type{
+    flex: 1;
+    background-color:black;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    border: 0.1rem solid white;
+    border-radius: 1.5rem;
+  }
+  .title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .components li{
+    list-style: none;
+  }
+  #Projects{
+    background-color: black;
+    color: white;
+    padding: 6rem;
+  }
+  .section3{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 4rem;
+  }
+  .project-cards{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .card{
+    border: 0.1rem solid white;
+    border-radius: 1.5rem;
+  }
+  .card-body{
+    background-color: black;
+  }
+#Education{
+    background-color: black;
+    padding: 5rem;
+}
+.section4{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.Institutes{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.education-detail{
+    color: white;
+    opacity: 40%;
+    text-align: center;
+    line-height: 10px;
+}
+.college,.school{
+    border: .1rem solid white;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+.college{
+    justify-items: center;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+.footnav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
