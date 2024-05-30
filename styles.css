@@ -25,9 +25,6 @@
     .skills-container{
         flex-direction: column;
     }
-    .main-image{
-        transform: translate(50%,10%);
-    }
     .Institutes{
         flex-direction: column;
     }
@@ -149,7 +146,7 @@ body{
 
 
 .main-image{
-    transform:translate(-10%,30%);
+    transform:translate(-10%,40%);
 }
 .RHS{
     aspect-ratio: 1;
