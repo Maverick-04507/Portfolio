@@ -87,10 +87,11 @@ body{
     background-color: black;
     position: fixed;
     z-index: 100;
+
 }
 .home-icons{
     margin-top: 1rem;
-    margin-bottom: 2.2rem;
+    margin-bottom: 2rem;
     padding: 1rem;
 }
 .animate{
@@ -150,7 +151,7 @@ body{
 
 
 .main-image{
-    transform:translate(-10%,40%);
+    transform:translate(-5%,45%);
 }
 .RHS{
     aspect-ratio: 1;
