@@ -87,7 +87,11 @@ body{
     background-color: black;
     position: fixed;
     z-index: 100;
-
+}
+.home-icons{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
 }
 .animate{
     display: inline-flex;
