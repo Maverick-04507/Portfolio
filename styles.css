@@ -11,9 +11,11 @@
         justify-content: center;
         align-items: center;
         gap: 10rem;
+        height: 100%;
     }
     .LHS{
-        order:1
+        order:1;
+        height: 100%;
     }
 
     .project-cards{
@@ -21,12 +23,19 @@
         justify-content: center;
         align-items: center;
         gap: 4rem;
+        height: 100%;
     }
     .skills-container{
         flex-direction: column;
+        height: 100%;
     }
     .Institutes{
         flex-direction: column;
+        height: 100%;
+    }
+    .frontend,.Language,.others{
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 body{
@@ -93,6 +102,16 @@ body{
     margin-top: 1rem;
     margin-bottom: 2rem;
     padding: 1rem;
+    display: flex;
+    
+}
+.mediaicons{
+    transition:0.5s ease-in-out;
+
+}
+.mediaicons:hover{
+    transform: translateY(20px);
+    cursor: pointer;
 }
 .animate{
     display: inline-flex;
@@ -186,30 +205,52 @@ body{
     margin-bottom: 4rem;
 
 }
-.skills-container{
+.skill{
     display: flex;
-    gap:2rem;
+    flex-direction: column;
+}
+.item-frontend,.item-others,.item-Language{
+    border: 0.1rem solid white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 
+    0 0 1rem white,
+    0 0 1.5rem aqua;
+    transition: 0.5s ease-in-out;
+}
+.item-frontend:hover{
+    transform: translateY(20px);
+
+}
+.item-Language:hover{
+    transform: translateY(20px);
+}
+.item-others:hover{
+    transform: translateY(20px);
+}
+.frontend,.others,.Language{
+    display: flex;
     justify-content: center;
     align-items: center;
-    
-  }
-  .type{
-    flex: 1;
-    background-color:black;
-    max-width: 400px;
+    gap:10rem;
+}
+.skill p{
     text-align: center;
-    padding: 20px;
-    border: 0.1rem solid white;
-    border-radius: 1.5rem;
-  }
-  .title{
-    font-size: 20px;
+}
+.head{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 4rem;
+}
+.skill .frontend p,.item-Language p,.item-others p{
+    font-size: 1.3rem;
     font-weight: bold;
-    margin-bottom: 8px;
-  }
-  .components li{
-    list-style: none;
-  }
+}
+.skill img{
+    height: 150px;
+    width: 150px;
+}
+
   #Projects{
     background-color: black;
     color: white;
@@ -227,6 +268,13 @@ body{
   .card{
     border: 0.1rem solid white;
     border-radius: 1.5rem;
+    box-shadow:
+    0 0 1rem white,
+    0 0 1rem aqua;
+    transition: 0.5s ease-in-out;
+  }
+  .card:hover{
+    transform: translateY(20px);
   }
   .card-body{
     background-color: black;
@@ -256,6 +304,16 @@ body{
     border: .1rem solid white;
     padding: 1.5rem;
     border-radius: 1.5rem;
+    box-shadow: 
+    0 0 1rem white,
+    0 0 1rem aqua;
+    transition: 0.5s ease-in-out;
+}
+.college:hover{
+ transform: translateY(20px)
+}
+.school:hover{
+    transform: translateY(20px);
 }
 .college{
     justify-items: center;
