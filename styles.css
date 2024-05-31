@@ -106,11 +106,11 @@ body{
     
 }
 .mediaicons{
-    transition:0.5s ease-in-out;
+    transition:0.5s all ease;
 
 }
 .mediaicons:hover{
-    transform: translateY(20px);
+    transform: scale(1.3);
     cursor: pointer;
 }
 .animate{
