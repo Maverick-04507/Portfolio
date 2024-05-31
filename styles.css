@@ -184,9 +184,7 @@ body{
     0 0 1rem white,
     inset 0 0 1rem white,
     0 0 2rem aqua,
-    inset 0 0 2rem aqua,
-    0 0 3rem aqua,
-    inset 0 0 3rem aqua;
+    inset 0 0 2rem aqua;
 }
 .static-text .intro-text{
     font-size: 20px;
