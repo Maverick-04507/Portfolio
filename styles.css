@@ -25,10 +25,6 @@
         gap: 4rem;
         height: 100%;
     }
-    .skills-container{
-        flex-direction: column;
-        height: 100%;
-    }
     .Institutes{
         flex-direction: column;
         height: 100%;
@@ -43,6 +39,7 @@ body{
 }
 #Home{
     background: black;
+    width: 1550px;
 }
 .poppins-medium {
     font-family: "Poppins", sans-serif;
@@ -85,10 +82,13 @@ body{
     font-weight: 600;
     font-size: 1.3rem;
 }
+.taskbar .second:hover{
+    color: white;
+}
 .taskbar{
     display: flex;
     gap: 3.5rem;
-    height: 10vh;
+    height: 7vh;
     width: 100%;
     padding: 2.5rem;
     justify-content: space-between;
@@ -141,6 +141,7 @@ body{
     top: 0;
     animation: slide 6s steps(4) infinite;
 }
+
 .changing-text li span{
     position: relative;
 }
@@ -196,13 +197,66 @@ body{
     background-color: black;
     color: white;
     padding: 4rem;
+    width: 1550px;
 }
 .section2{
     text-align: center;
     font-size: 50px;
 
 }
-.skill{
+
+.main-skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+.main-skill img{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    margin-left: 3rem;
+
+}
+.frontend,.language,.frameworks,.others {
+    border: solid 0.1rem white;
+    border-radius: 0.9rem;
+    box-shadow:0 0 1rem white,
+    0 0 1rem aqua;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    transition: 0.5s ease-in-out;
+}
+.frontend:hover,.language:hover{
+    transform: translateY(-20px);
+}
+.frameworks:hover,.others:hover{
+    transform: translateY(20px);
+}
+.lang-comp,.front-comp,.frame-comp,.other-comp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.lang-comp img,.front-comp img,.frame-comp img{
+    margin-right:3rem;
+}
+.lang-comp p,.front-comp p,.frame-comp p,.other-comp p{
+    text-align: center;
+}
+.languages,.front,.framework,.other{
+    text-align: center;
+    font-size: 1.6rem;
+}
+.other-comp p{
+    padding-left: 2.2rem;
+}
+/* .skill{
     display: flex;
     flex-direction: column;
 }
@@ -246,17 +300,20 @@ body{
 .skill img{
     height: 150px;
     width: 150px;
-}
+} */
 
-  #Projects{
+
+#Projects{
     background-color: black;
     color: white;
     padding: 6rem;
+    width: 1550px;
   }
   .section3{
     text-align: center;
     font-size: 50px;
     margin-bottom: 4rem;
+    width: 100%;
   }
   .project-cards{
     display: flex;
@@ -279,6 +336,7 @@ body{
 #Education{
     background-color: black;
     padding: 5rem;
+    width: 1550px;
 }
 .section4{
     color: white;
@@ -317,6 +375,7 @@ body{
 }
 footer{
     background-color: black;
+    width: 1550px;
     text-align: center;
     color: white;
     display: flex;
