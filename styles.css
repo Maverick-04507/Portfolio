@@ -17,6 +17,11 @@
         order:1;
         height: 100%;
     }
+    .main-skill{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr 1fr 1fr 1fr;
+    }
 
     .project-cards{
         flex-direction: column;
@@ -193,9 +198,15 @@ body{
 
 }
 #Skills{
+    display: flex;
+    flex-direction: column;
     background-color: black;
     color: white;
     padding: 4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 .section2{
     text-align: center;
@@ -205,11 +216,12 @@ body{
 
 .main-skill{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:  1fr 1fr;
+    grid-template-columns: 1fr ;
+    grid-template-rows:  1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    max-width: fit-content;
     
 }
 .main-skill img{
@@ -254,52 +266,6 @@ body{
 .other-comp p{
     padding-left: 2.2rem;
 }
-/* .skill{
-    display: flex;
-    flex-direction: column;
-}
-.item-frontend,.item-others,.item-Language{
-    border: 0.1rem solid white;
-    border-radius: 15px;
-    padding: 2rem;
-    box-shadow: 
-    0 0 1rem white,
-    0 0 1.5rem aqua;
-    transition: 0.5s ease-in-out;
-}
-.item-frontend:hover{
-    transform: translateY(20px);
-
-}
-.item-Language:hover{
-    transform: translateY(20px);
-}
-.item-others:hover{
-    transform: translateY(20px);
-}
-.frontend,.others,.Language{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:10rem;
-}
-.skill p{
-    text-align: center;
-}
-.head{
-    font-size: 2rem;
-    font-weight: bolder;
-    padding: 4rem;
-}
-.skill .frontend p,.item-Language p,.item-others p{
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-.skill img{
-    height: 150px;
-    width: 150px;
-} */
-
 
 #Projects{
     background-color: black;
