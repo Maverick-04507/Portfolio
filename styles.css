@@ -7,6 +7,7 @@
 }
 @media(max-width: 1000px){
     .main-container{
+        padding-top: 4rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
