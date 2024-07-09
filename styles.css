@@ -39,7 +39,6 @@ body{
 }
 #Home{
     background: black;
-    width: 1550px;
 }
 .poppins-medium {
     font-family: "Poppins", sans-serif;
@@ -197,7 +196,6 @@ body{
     background-color: black;
     color: white;
     padding: 4rem;
-    width: 1550px;
 }
 .section2{
     text-align: center;
@@ -307,7 +305,6 @@ body{
     background-color: black;
     color: white;
     padding: 6rem;
-    width: 1550px;
   }
   .section3{
     text-align: center;
@@ -336,7 +333,6 @@ body{
 #Education{
     background-color: black;
     padding: 5rem;
-    width: 1550px;
 }
 .section4{
     color: white;
@@ -375,7 +371,6 @@ body{
 }
 footer{
     background-color: black;
-    width: 1550px;
     text-align: center;
     color: white;
     display: flex;
